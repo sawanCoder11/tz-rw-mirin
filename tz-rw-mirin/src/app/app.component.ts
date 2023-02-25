@@ -7,4 +7,26 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tz-rw-mirin';
+  date:any;
+  public today = Date.now();
+  constructor(){
+    setInterval(()=>{
+      this.date=new Date();
+      this.today=Date.now();
+    },1000);
+  }
+
 }
+
+
+  /*date:any;
+  public today = Date.now();
+  
+  /*constructor(){
+    setInterval(() => {
+      this.date = new Date();
+      this.today = Date.now();
+    }, 1000)};
+
+}
+*/
