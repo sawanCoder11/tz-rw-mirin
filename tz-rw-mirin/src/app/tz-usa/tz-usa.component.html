@@ -1,0 +1,46 @@
+<p>tz-usa works!</p>
+<strong> USA </strong>
+<br />
+
+
+<table border="2px">
+  <th>
+    <caption>The New TimeZones</caption>
+  </th>
+  <th>
+    <caption>UTC Timeset</caption>
+  </th>
+  <th>
+    <caption>TZ Code</caption>
+  </th>
+  <th>
+    <caption>States Tagged</caption>
+  </th>
+  
+  <tr>
+    <td>Washington,DC</td>
+    <td> {{date | date: 'medium':'UTC -5'}}</td>
+    <td>Washington EST :: UTC -5</td>
+    <td>USA</td>
+  </tr>
+  <tr>
+    <td>Local State Time</td>
+    <td> {{date | date: 'medium':'UTC -7'}}</td>
+    <td>Denver MT:: UTC -7</td>
+    <td>USA</td>
+  </tr>
+  
+  <tr>
+    <td>Pacific Time</td>
+    <td>{{date | date: 'medium':'UTC -9'}}</td>
+    <td>Pacific Time :: UTC -9</td>
+    <td>USA</td>
+  </tr>
+  <tr>
+    <td>Aleutian Islands</td>
+    <td> {{date | date: 'medium':'UTC +12'}}</td>
+    <td>Aleutian :: UTC +12</td>
+    <td>USA</td>
+  </tr>
+
+</table>

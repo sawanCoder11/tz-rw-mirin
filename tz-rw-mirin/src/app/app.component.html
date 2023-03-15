@@ -1,430 +1,83 @@
-<h1>Always ...</h1>
+<button type="button" (click)="fn_reload()">Always ...</button>
+
+
+
 <div id="toolset3" id="clock1" align="center">
-   <mark>
-    We have seen some clouds with #Water aka #Paani, Collaboration with a #Believity
-  </mark>
-  <br />
-  <strong> USA </strong>
-  <br /><p>Reference :: {{date | date: 'medium':'EST'}}<p>
-
-     <table border="2px">
-      <th>
-        <caption>The New TimeZones</caption>
-      </th>
-      <th>
-        <caption>UTC Timeset</caption>
-      </th>
-      <th>
-        <caption>TZ Code</caption>
-      </th>
-      <th>
-        <caption>States Tagged</caption>
-      </th>
-
-      <tr>
-        <td>Washington,DC</td>
-        <td> {{date | date: 'medium':'UTC -5'}}</td>
-        <td>Washington :: UTC -5</td>
-        <td>Washington DC</td>
-      </tr>
-      <tr>
-        <td>State Time</td>
-        <td> {{date | date: 'medium':'UTC -5'}}</td>
-        <td>OHIO :: EST</td>
-        <td>OHIO </td>
-      </tr>
-      <tr>
-        <td>Atlantic Time</td>
-        <td> {{date | date: 'medium':'UTC -3'}}</td>
-        <td>Atlantic :: UTC -3</td>
-        <td>Atlantic</td>
-      </tr>
-      <tr>
-        <td>Pacific Time</td>
-        <td> {{date | date: 'medium':'UTC -10'}}</td>
-        <td>Hawaii Time</td>
-        <td>Hi</td>
-      </tr>
-    </table>
-
+    <mark>
+      We have seen some clouds with #Water aka #Paani, Collaboration with a #Believity
+    </mark>
+    <br />
+   
+    <div border="3px">
+  
+      <button class="button" mat-raised-button color="grey" routerLink="/tz-usa-routing" routerLinkActive="active">USA</button>
+  
+  
+      <button mat-raised-button color="grey" routerLink="/tz-africa-routing" routerLinkActive="active">Africa</button>
+  
+  
+      <button mat-raised-button color="grey" routerLink="/tz-india-routing" routerLinkActive="active">India</button>
+  
+  
+  
+      <button mat-raised-button color="grey" routerLink="/tz-middleeast-routing" routerLinkActive="active">Middle
+        East</button>
+  
+      <button mat-raised-button color="grey" routerLink="/tz-america-routing" routerLinkActive="active">America</button>
+  
+      <button mat-raised-button color="grey" routerLink="/tz-china-routing" routerLinkActive="active">China</button>
+  
+      <button mat-raised-button color="grey" routerLink="/tz-asia-routing" routerLinkActive="active">Asia</button>
+      <button mat-raised-button color="grey" routerLink="/tz-islandnations-routing" routerLinkActive="active">Island
+        Nations</button>
+      <button mat-raised-button color="grey" routerLink="/tz-westasia-routing" routerLinkActive="active">West Asia -
+        East Europe</button>
+  
+      <button mat-raised-button color="grey" routerLink="/tz-centralasia-routing"
+        routerLinkActive="active">Central Asia</button>
+  
+  
+      <button mat-raised-button color="grey" routerLink="/tz-russia-routing" routerLinkActive="active">Russia</button>
+  
+      <button mat-raised-button color="grey" routerLink="/tz-australia-routing"
+        routerLinkActive="active">Australia</button>
+  
+      <button mat-raised-button color="grey" routerLink="/tz-europe-routing" routerLinkActive="active">Europe</button>
+      
+      <button mat-raised-button color="accent" routerLink="/tz-independentwater-routing" routerLinkActive="active">Independent Water</button>
+  
+        
+      <router-outlet></router-outlet>
+  
+      <!-- 
+        USA <app-tz-usa></app-tz-usa>
+      -->
+    
+    <br />
+  
     <table border="5px">
-      <tr>Oceanic Time</tr>
-      <tr>
-        <td>Arctic Time</td>
-        <td> {{date | date: 'medium':'UTC -9.25'}}</td>
-        <td>USAST :: UTC -9:25</td>
-        <td>OH</td>
-      </tr>
+      <tr>Oceanic Time USA</tr>
       <tr>
         <td>GreenLand Sea</td>
         <td> {{date | date: 'medium':'UTC +0'}}</td>
-        <td>USAST :: UTC 0</td>
-        <td>GreenLand Sea</td>
+        <td>USAST Day Start:: UTC 0</td>
+        <td>USA</td>
       </tr>
       <tr>
         <td>Bermuda Triangle</td>
         <td> {{date | date: 'medium':'UTC -4:25'}}</td>
         <td>USAST :: UTC -4:25</td>
-        <td>Bermuda Triangle</td>
-      </tr>
-
-    </table>
-
-      <br />
-      <strong> India </strong>
-      <p>Prayagraj IST OLD TZ :: {{date | date: 'medium':'UTC +5:30'}}<p>
-
-      <table border="2px">
-
-      <th>
-        <caption>The New TimeZones</caption>
-      </th>
-      <th>
-        <caption>UTC Timeset</caption>
-      </th>
-      <th>
-        <caption>TZ Code</caption>
-      </th>
-      <th>
-        <caption>States Tagged</caption>
-      </th>
-
-      <tr>
-        <td>Tezu</td>
-        <td> {{date | date: 'medium':'UTC +6:30'}}</td>
-        <td>IST :: UTC 6:30</td>
-        <td>AR,NL,A&NI,OD</td>
+        <td>USA</td>
       </tr>
       <tr>
-        <td>Shilong - Bay of Bengal</td>
-        <td> {{date | date: 'medium':'UTC +6'}}</td>
-        <td>IST :: UTC 6</td>
-        <td>ML,WB,AS,JH,SK,UK</td>
-      </tr>
-      <tr>
-        <td>Prayagraj</td>
-        <td> {{date | date: 'medium':'UTC +5:30'}}</td>
-        <td>IST :: UTC 5:30</td>
-        <td>UP,BR,AP,TS,TN,CG,MP,LA,HP</td>
-      </tr>
-      <tr>
-        <td>NewDelhi</td>
-        <td> {{date | date: 'medium':'UTC +5:15'}}</td>
-        <td>IST :: UTC 5:15</td>
-        <td>DL,CH,HR,Wardha</td>
-      </tr>
-      <tr>
-        <td>Indian New Khalistan</td>
-        <td> {{date | date: 'medium':'UTC +5:10'}}</td>
-        <td>IST :: UTC 5:09</td>
-        <td>Malerkotla,Sambhaji Nagar</td>
-      </tr>
-      <tr>
-        <td>Mumbai</td>
-        <td> {{date | date: 'medium':'UTC +5'}}</td>
-        <td>IST :: UTC 5</td>
-        <td>MH,JK,KA,RJ,PB</td>
-      </tr>
-      <tr>
-        <td>Bhuj - Arabian Sea</td>
-        <td> {{date | date: 'medium':'UTC +4:30'}}</td>
-        <td>IST :: UTC 4:30</td>
-        <td>GJ,KL,LD,GA</td>
+        <td>Arctic Ocean Time</td>
+        <td>{{date | date: 'medium':'UTC +12'}}</td>
+        <td>USAST Day End :: UTC +12</td>
+        <td>USA</td>
       </tr>
     </table>
-    <br />
-  <strong> Pakistan </strong>
-  <p>Islamabad PST OLD TZ :: {{date | date: 'medium':'UTC +5'}}</p>
-  <table border="2px">
-    <th>
-      <caption>The New TimeZones</caption>
-    </th>
-    <th>
-      <caption>UTC Timeset</caption>
-    </th>
-    <th>
-      <caption>TZ Code</caption>
-    </th>
-    <th>
-      <caption>States Tagged</caption>
-    </th>
-    <tr>
-      <td>Islamabad </td>
-      <td>{{date | date: 'medium':'UTC +5'}}</td>
-      <td>PST :: UTC 5</td>
-      <td>ICT,PB,KPK</td>
-    </tr>
-    <tr>
-      <td>Karachi</td>
-      <td>{{date | date: 'medium':'UTC +4:30'}}</td>
-      <td>PST :: UTC 4:30</td>
-      <td>SD,</td>
-    </tr>
-    <tr>
-      <td>Gulf Of Pakistan</td>
-      <td>{{date | date: 'medium':'UTC +4'}}</td>
-      <td>PST :: UTC 4</td>
-      <td>BA,</td>
-    </tr>
-  </table>
-
-  <br />
-  <strong>China</strong>
-  <p>Shanghai :: {{date | date: 'medium':'UTC +8'}}</p>
-
-  <table border="2px">
-    <th>
-        <caption>The New TimeZones</caption>
-    </th>
-    <th>
-        <caption>UTC Timeset</caption>
-    </th>
-    <th>
-        <caption>TZ Code</caption>
-    </th>
-    <th>
-        <caption>States Tagged</caption>
-    </th>
-    <tr>
-        <td>Sanghai Time</td>
-        <td>{{date | date: 'medium':'UTC +8'}}</td>
-        <td>Sanghai :: UTC 8</td>
-        <td>Sanghai Time</td>
-      </tr>
-      <tr>
-        <td>XINJIANG UYGUR Time</td>
-        <td>{{date | date: 'medium':'UTC +5'}}</td>
-        <td>XINJIANG UYGUR :: UTC 5</td>
-        <td>XINJIANG UYGUR </td>
-      </tr>
-</table>
-  <br />
-  <strong>Europe</strong>
-
-  <table border="2px">
-     <th>
-        <caption>The New TimeZones</caption>
-    </th>
-    <th>
-      <caption>Country</caption>
-    </th>
-    <th>
-        <caption>UTC Timeset</caption>
-    </th>
-    <th>
-        <caption>TZ Code</caption>
-    </th>
-    <th>
-        <caption>States Tagged</caption>
-    </th>
-    <tr>
-      <td>Kyiv</td>
-      <td>Ukraine</td>
-      <td>{{date | date: 'medium':'UTC +2'}}</td>
-      <td>Kyiv</td>
-      <td>Kyiv</td>
-    </tr>
-    <tr>
-      <td>Paris</td>
-      <td>France</td>
-      <td>{{date | date: 'medium':'UTC +1'}}</td>
-      <td>PAR</td>
-      <td>Paris</td>
-    </tr>
-     <tr>
-      <td>Glasgow</td>
-      <td>UK</td>
-      <td>{{date | date: 'medium':'UTC -0:30'}}</td>
-      <td>GLA</td>
-      <td>UK</td>
-    </tr>
-     <tr>
-      <td>London</td>
-      <td>UK</td>
-      <td>{{date | date: 'medium':'UTC '}}</td>
-      <td>LDN</td>
-      <td>UK</td>
-    </tr>
-  </table>
-
-     <br />
-  <strong>Africa</strong>
-   <table border="2px">
-     <th>
-        <caption>The New TimeZones</caption>
-    </th>
-    <th>
-      <caption>Country</caption>
-    </th>
-    <th>
-        <caption>UTC Timeset</caption>
-    </th>
-    <th>
-        <caption>TZ Code</caption>
-    </th>
-    <th>
-        <caption>States Tagged</caption>
-    </th>
-    <tr>
-      <td>Lagaos</td>
-      <td>Nigeria</td>
-      <td>{{date | date: 'medium':'UTC +0'}}</td>
-      <td>NG-LA</td>
-      <td>Lagaos</td>
-    </tr>
-     <tr>
-      <td>Abuja</td>
-      <td>Nigeria</td>
-      <td>{{date | date: 'medium':'UTC +0:30'}}</td>
-      <td>NG-FC</td>
-      <td>Lagaos</td>
-    </tr>
-  </table>
-
-
-   <br />
-  <strong>Middle East</strong> 
-   <table border="2px">
-     <th>
-        <caption>The New TimeZones</caption>
-    </th>
-    <th>
-      <caption>Country</caption>
-    </th>
-    <th>
-        <caption>UTC Timeset</caption>
-    </th>
-    <th>
-        <caption>TZ Code</caption>
-    </th>
-    <th>
-        <caption>States Tagged</caption>
-    </th>
-    <tr>
-      <td>Doha</td>
-      <td>Qatar</td>
-      <td>{{date | date: 'medium':'UTC +3'}}</td>
-      <td>DOH</td>
-      <td>Doha</td>
-    </tr>
+  </div>
+<section></section>
     
-  </table>
 
-     <br />
-  <strong>South America</strong> 
-   <table border="2px">
-     <th>
-        <caption>The New TimeZones</caption>
-    </th>
-    <th>
-      <caption>Country</caption>
-    </th>
-    <th>
-        <caption>UTC Timeset</caption>
-    </th>
-    <th>
-        <caption>TZ Code</caption>
-    </th>
-    <th>
-        <caption>States Tagged</caption>
-    </th>
-    <tr>
-      <td>Santiago</td>
-      <td>Chile</td>
-      <td>{{date | date: 'medium':'UTC -3'}}</td>
-      <td>SDC</td>
-      <td>Santiago</td>
-    </tr>
     
-  </table>
-
-     <br />
-  <strong>IsLand Nations</strong> 
-   <table border="2px">
-     <th>
-        <caption>The New TimeZones</caption>
-    </th>
-    <th>
-      <caption>Country</caption>
-    </th>
-    <th>
-        <caption>UTC Timeset</caption>
-    </th>
-    <th>
-        <caption>TZ Code</caption>
-    </th>
-    <th>
-        <caption>States Tagged</caption>
-    </th>
-    <tr>
-      <td>Wellington</td>
-      <td>NewZealand</td>
-      <td>{{date | date: 'medium':'UTC +13'}}</td>
-      <td>WLG</td>
-      <td>Wellington</td>
-    </tr>
-    
-  </table>
-
-  <strong>Australia</strong> 
-   <table border="2px">
-     <th>
-        <caption>The New TimeZones</caption>
-    </th>
-    <th>
-      <caption>Country</caption>
-    </th>
-    <th>
-        <caption>UTC Timeset</caption>
-    </th>
-    <th>
-        <caption>TZ Code</caption>
-    </th>
-    <th>
-        <caption>States Tagged</caption>
-    </th>
-    <tr>
-      <td>Perth</td>
-      <td>Australia</td>
-      <td>{{date | date: 'medium':'UTC +8'}}</td>
-      <td>PER</td>
-      <td>Perth</td>
-    </tr>
-    
-  </table>
-
-    <strong>ASIA</strong> 
-   <table border="2px">
-     <th>
-        <caption>The New TimeZones</caption>
-    </th>
-    <th>
-      <caption>Country</caption>
-    </th>
-    <th>
-        <caption>UTC Timeset</caption>
-    </th>
-    <th>
-        <caption>TZ Code</caption>
-    </th>
-    <th>
-        <caption>States Tagged</caption>
-    </th>
-    <tr>
-      <td>Singapore</td>
-      <td>Singapore</td>
-      <td>{{date | date: 'medium':'UTC +8'}}</td>
-      <td>SG</td>
-      <td>Singapore</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td>Russia</td>
-      <td>{{date | date: 'medium':'UTC +9'}}</td>
-      <td></td>
-      <td></td>
-    </tr>
-    
-  </table>
-
-</div>

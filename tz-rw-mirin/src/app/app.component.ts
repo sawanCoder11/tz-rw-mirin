@@ -16,6 +16,10 @@ export class AppComponent {
     },1000);
   }
 
+  public fn_reload(){
+    window.location.reload();
+  }
+
 }
 
 

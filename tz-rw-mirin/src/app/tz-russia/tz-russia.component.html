@@ -1,0 +1,89 @@
+<p>tz-russia works!</p>
+
+<ng-container *ngIf="true; else elseNotDone">
+ 
+<div border="3px">
+
+  <strong>Russia</strong> 
+  <table border="2px">
+    <th>
+       <caption>The New TimeZones</caption>
+   </th>
+   <th>
+     <caption>Country</caption>
+   </th>
+   <th>
+       <caption>UTC Timeset</caption>
+   </th>
+   <th>
+       <caption>TZ Code</caption>
+   </th>
+   <th>
+       <caption>States Tagged</caption>
+   </th>
+   <tr>
+     <td>GMT Cycle End</td>
+     <td>Russia +12</td>
+     <td>{{date | date: 'medium':'UTC +12'}}</td>
+     <td>Russia UTC +12</td>
+     <td>Russia</td>
+   </tr>
+   <tr>
+     <td>Khabarovsk</td>
+     <td>Russia</td>
+     <td>{{date | date: 'medium':'UTC +9'}}</td>
+     <td>Khabarovsk Krai UTC +9</td>
+     <td>Russia</td>
+   </tr>
+     <tr>
+     <td>Rural -  Novaya Chara</td>
+     <td>Russia</td>
+     <td>{{date | date: 'medium':'UTC +8'}}</td>
+     <td>Russia UTC +8</td>
+     <td>Russia</td>
+   </tr>
+   <tr>
+     <td>Kara Sea</td>
+     <td>Russia</td>
+     <td>{{date | date: 'medium':'UTC +6'}}</td>
+     <td>Russia UTC +6</td>
+     <td>Russia</td>
+   </tr>
+   <tr>
+     <td>Moscow</td>
+     <td>Russia</td>
+     <td>{{date | date: 'medium':'UTC +3'}}</td>
+     <td>Russia UTC +3</td>
+     <td>Russia</td>
+   </tr>
+   <tr>
+     <td>Saint Petersburg</td>
+     <td>Russia</td>
+     <td>{{date | date: 'medium':'UTC +2'}}</td>
+     <td>Russia UTC +2</td>
+     <td>Russia</td>
+   </tr>
+   <tr>
+     <td>Volgograd</td>
+     <td>Russia</td>
+     <td>{{date | date: 'medium':'UTC +3'}}</td>
+     <td>Russia UTC +3</td>
+     <td>Russia</td>
+   </tr>
+  
+   <tr>
+     <td>Russia Arcatic Ocean</td>
+     <td>Russia +0</td>
+     <td>{{date | date: 'medium':'UTC +0'}}</td>
+     <td>Russia UTC +0</td>
+     <td>Russia</td>
+   </tr>
+   
+ </table>
+
+</div>
+</ng-container>
+
+<ng-template #elseNotDone>
+  It's Not Done!
+</ng-template>
