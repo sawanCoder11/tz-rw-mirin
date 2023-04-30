@@ -1,0 +1,36 @@
+<br />
+<div border="2px">
+    <caption>Welcome To America</caption>
+
+    <button class="button" mat-raised-button color="grey" (click)="ShowRegion(1);">Canada</button>
+   
+    <button class="button" mat-raised-button color="grey" (click)="ShowRegion(2)">Caribbean Waters</button>
+
+    <button class="button" mat-raised-button color="grey" (click)="ShowRegion(3)">South America</button>
+    <button class="button" mat-raised-button color="grey" (click)="ShowRegion(4)">Central America</button>
+    <button class="button" mat-raised-button color="grey" (click)="ShowRegion(5)">Latin America</button>
+    <button class="button" mat-raised-button color="grey" (click)="ShowRegion(6)">Mexico</button>
+    
+</div>
+<div border="3px">
+    <div *ngIf="showcanada">
+        <app-tz-canada></app-tz-canada>
+    </div>
+    <div *ngIf="showCaribbean">
+        <app-tz-caribbean></app-tz-caribbean>
+    </div>
+
+    <div *ngIf="showSouthAmerica">
+        <app-tz-southamerica></app-tz-southamerica>
+    </div>
+    <div *ngIf="showCentralAmerica">
+        <app-tz-centralamerica></app-tz-centralamerica>
+    </div>
+    <div *ngIf="showLatinAmerica">
+        <app-tz-natives></app-tz-natives>
+    </div>
+    <div *ngIf="showMexico">
+        <app-tz-mexico></app-tz-mexico>
+    </div>
+
+</div>

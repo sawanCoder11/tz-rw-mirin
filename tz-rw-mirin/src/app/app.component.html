@@ -1,83 +1,106 @@
-<button type="button" (click)="fn_reload()">Always ...</button>
+
+<header class="bg-light text-center text-lg-start">
+ 
+  <button type="button" (click)="fn_reload()">Always ... {{date | date: 'yyyy-mm-dd'}}</button><br />
+
+</header>
 
 
 
 <div id="toolset3" id="clock1" align="center">
-    <mark>
-      We have seen some clouds with #Water aka #Paani, Collaboration with a #Believity
-    </mark>
-    <br />
-   
-    <div border="3px">
-  
-      <button class="button" mat-raised-button color="grey" routerLink="/tz-usa-routing" routerLinkActive="active">USA</button>
-  
-  
-      <button mat-raised-button color="grey" routerLink="/tz-africa-routing" routerLinkActive="active">Africa</button>
-  
-  
-      <button mat-raised-button color="grey" routerLink="/tz-india-routing" routerLinkActive="active">India</button>
-  
-  
-  
-      <button mat-raised-button color="grey" routerLink="/tz-middleeast-routing" routerLinkActive="active">Middle
-        East</button>
-  
-      <button mat-raised-button color="grey" routerLink="/tz-america-routing" routerLinkActive="active">America</button>
-  
-      <button mat-raised-button color="grey" routerLink="/tz-china-routing" routerLinkActive="active">China</button>
-  
-      <button mat-raised-button color="grey" routerLink="/tz-asia-routing" routerLinkActive="active">Asia</button>
-      <button mat-raised-button color="grey" routerLink="/tz-islandnations-routing" routerLinkActive="active">Island
-        Nations</button>
-      <button mat-raised-button color="grey" routerLink="/tz-westasia-routing" routerLinkActive="active">West Asia -
-        East Europe</button>
-  
-      <button mat-raised-button color="grey" routerLink="/tz-centralasia-routing"
-        routerLinkActive="active">Central Asia</button>
-  
-  
-      <button mat-raised-button color="grey" routerLink="/tz-russia-routing" routerLinkActive="active">Russia</button>
-  
-      <button mat-raised-button color="grey" routerLink="/tz-australia-routing"
-        routerLinkActive="active">Australia</button>
-  
-      <button mat-raised-button color="grey" routerLink="/tz-europe-routing" routerLinkActive="active">Europe</button>
-      
-      <button mat-raised-button color="accent" routerLink="/tz-independentwater-routing" routerLinkActive="active">Independent Water</button>
-  
-        
-      <router-outlet></router-outlet>
-  
-      <!-- 
+  <mark align="center">
+    We have seen some clouds with #Rain (#Water aka #Paani aka #Rain), Collaboration with a #Believity
+  </mark>
+  <br />
+  <marquee>
+        Daylight Saving Implementation... , Work in Progress 
+  </marquee>
+
+  <div border="3px">
+
+    <button class="button" mat-raised-button color="grey" routerLink="/tz-usa-routing"
+      routerLinkActive="active">USA</button>
+    <button mat-raised-button color="grey" routerLink="/tz-america-routing" routerLinkActive="active">America</button>
+    <button mat-raised-button color="grey" routerLink="/tz-europe-routing" routerLinkActive="active">Europe</button>
+    <button mat-raised-button color="grey" routerLink="/tz-middleeast-routing" routerLinkActive="active">Middle
+      East</button>
+
+    &nbsp;&nbsp;
+
+    <button mat-raised-button color="grey" routerLink="/tz-french-routing" routerLinkActive="active">France</button>
+    <button mat-raised-button color="grey" routerLink="/tz-africa-routing" routerLinkActive="active">Africa</button>
+    &nbsp;
+
+
+
+
+
+
+
+    
+    <button mat-raised-button color="grey" routerLink="/tz-westasia-routing" routerLinkActive="active">West Asia -
+      East Europe</button>
+
+    <button mat-raised-button color="grey" routerLink="/tz-centralasia-routing" routerLinkActive="active">Central
+      Asia</button>
+      &nbsp;
+    
+    <button mat-raised-button color="grey" routerLink="/tz-china-routing" routerLinkActive="active">China</button>
+    <button mat-raised-button color="grey" routerLink="/tz-russia-routing" routerLinkActive="active">Russia</button>
+    <button mat-raised-button color="grey" routerLink="/tz-asia-routing" routerLinkActive="active">Asia</button>
+    <button mat-raised-button color="grey" routerLink="/tz-islandnations-routing" routerLinkActive="active">Island
+      Nations</button>
+      &nbsp;
+    <button mat-raised-button color="grey" routerLink="/tz-india-routing" routerLinkActive="active">India</button>
+    <button mat-raised-button color="grey" routerLink="/tz-australia-routing"
+      routerLinkActive="active">Australia</button>
+
+      &nbsp;
+    <button mat-raised-button color="accent" routerLink="/tz-independentwater-routing"
+      routerLinkActive="active">Independent Water</button>
+
+
+    <router-outlet></router-outlet>
+
+    <!-- 
         USA <app-tz-usa></app-tz-usa>
       -->
-    
+
     <br />
-  
+
     <table border="5px">
       <tr>Oceanic Time USA</tr>
       <tr>
         <td>GreenLand Sea</td>
-        <td> {{date | date: 'medium':'UTC +0'}}</td>
-        <td>USAST Day Start:: UTC 0</td>
+        <td> {{date | date: 'medium':'GMT +0'}}</td>
+        <td>USAST Day Start:: GMT 0</td>
         <td>USA</td>
       </tr>
       <tr>
         <td>Bermuda Triangle</td>
-        <td> {{date | date: 'medium':'UTC -4:25'}}</td>
-        <td>USAST :: UTC -4:25</td>
+        <td> {{date | date: 'medium':'GMT -4:25'}}</td>
+        <td>USAST :: GMT -4:25</td>
         <td>USA</td>
       </tr>
       <tr>
         <td>Arctic Ocean Time</td>
-        <td>{{date | date: 'medium':'UTC +12'}}</td>
-        <td>USAST Day End :: UTC +12</td>
+        <td>{{date | date: 'medium':'GMT +12'}}</td>
+        <td>USAST Day End :: GMT +12</td>
         <td>USA</td>
       </tr>
     </table>
   </div>
-<section></section>
-    
 
-    
+
+
+  <section></section>
+<br /><br />
+  <footer class="bg-light text-center text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright: GoldyNob8<br />
+      Developer TZ Location :: GMT +5:30 {{date | date: 'medium':'UTC +5:30'}}<br />
+      Daylight Saving :: UTC +4:30 {{date | date: 'medium':'UTC +4:30'}}
+    </div>
+ 
+  </footer>
